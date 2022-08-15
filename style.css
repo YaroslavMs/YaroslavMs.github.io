@@ -1,0 +1,234 @@
+:root{
+    /*variables*/
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    background-color:rgb(67, 61, 73);
+}
+header{
+    background-color: rgb(44, 39, 54);
+    padding: 16px 0px;
+    text-align: center;
+    color: rgb(209, 184, 184);
+    font-family: 'Brush Script MT' cursive;
+    font-weight: bolder;
+    
+    
+}
+#siteName{
+    text-shadow: 0px 0px 36px white;
+    font-size: 3em;
+    
+}
+nav{
+    background-color: rgb(19, 19, 31);
+    padding: 16px 24px;
+    font-family: 'Brush Script MT' cursive;
+    font-size: 2em;
+    color: rgb(209, 184, 184);
+    position: sticky;
+    position: -webkit-sticky; /*Safari*/
+    top: 0;
+    z-index: 2;
+}
+#navBar{
+    list-style-type: none;
+}
+#navBar > li{
+    display: inline;
+    padding: 0px;
+}
+.currentPage{
+    background-color: rgb(43, 43, 75);
+    box-shadow: 0px 0px 10px 12px rgb(43, 43, 75);
+}
+.dropdown-content .currentPage{
+    color: rgb(250, 138, 138);
+    box-shadow: none;
+    background-color: inherit;
+}
+a.navBarElement, .dropdown{
+    color:rgb(209, 184, 184);
+    text-decoration: none;
+}
+a.navBarElement:hover, .dropdown:hover{
+    color: rgb(171, 128, 128);
+}
+#navBar > li + li::before{
+    padding: 16px;
+    content: "/\00a0";
+    color: beige;
+}
+div#mainPart{
+    float: left;
+    width: 85%;
+    background-color: rgb(67, 61, 73);
+    color: rgb(209, 184, 184);
+    border-right: 1px solid black;
+}
+div#mainPart section{
+    padding: 90px 40px 90px 90px;
+    margin: 40px ;
+    border-bottom: 1px solid black;
+}
+div#mainPart section:last-child {
+    border-bottom: none;
+}
+h2{
+    font-family: Georgia, serif;
+    font-size: 45px;
+    color: white;
+    margin-bottom: 60px;
+    margin-top: 20px;
+    padding-left: 40px;
+}
+p{
+    font-family: Verdana, sans-serif;
+    font-size: 20px;
+    color: rgb(200, 200, 200);
+}
+aside{
+    float: left;
+    width: 15%;
+    background: rgb(67, 61, 73);
+    color: rgb(209, 184, 184);
+    padding: 10px; 
+}
+footer{
+    width: 100%;
+    float: center;
+    display: block;
+    border-top: 1px solid black;
+    padding: 80px;
+
+}
+aside section{
+    margin-top: 40px;
+}
+aside img{
+    width: 80%;
+    height: auto;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.fakeImage{
+    width: 150px;
+    height: 100px;
+    background-color: white;
+}
+.asideButton{
+    text-align: center;
+    padding: 5px 4px;
+    color: white;
+    background-color: rgb(19, 19, 31);
+    display: block;
+
+}
+.asideButton:hover{
+    border: 1px solid white;
+}
+.dropdown{
+    position: relative;
+    display: inline;
+    cursor: pointer;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: rgb(19, 19, 31);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    min-width: 300px;
+    left: 0;
+    font-size: 0.8em;
+    overflow: hidden;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+.dropdown-content a{
+    color:rgb(236, 221, 221);
+    text-decoration: none;
+    display: block;
+    margin: 0;
+    padding: 12px 16px;
+    text-align: left;
+}
+.dropdown-content a:hover{
+    background-color: rgb(37, 37, 56);
+
+}
+#mainPart a, footer a{
+    text-decoration: none;
+    color: white;
+    font-family: Georgia, serif;
+    font-weight: bolder;
+}
+#mainPart a:hover, footer a:hover{
+    text-decoration: underline 1px solid;
+}
+.downloadButton{
+    text-align: center;
+    padding: 14px 20px;
+    color: white;
+    background-color: rgb(17, 80, 21);
+    border: 2px solid rgb(30, 140, 37);
+    display: block;
+    margin: auto;
+}
+.downloadButton:hover{
+    border: 1px solid rgb(30, 140, 37);
+}
+.gallery{
+    width: 100%;
+    height: 400px;
+    position: relative;
+}
+.gallery .left-button, .gallery .right-button{
+    width: 5%;
+    display: inline;
+    float: left;
+    background-color: rgb(10, 10, 10);
+    color: white;
+    padding: 8px 14px;
+    font-size: 2vw;
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+}
+.gallery .right-button{
+    right: 0%;
+
+}
+.gallery .left-button:hover, .gallery .right-button:hover{
+    background-color: rgb(30, 30, 30);
+
+}
+.gallery .viewportForImage{
+    display: inline;
+    float: left;
+    width: 90%;
+    background-color: rgba(40, 40, 40, 0.4);
+    height: 100%;
+    margin-left: 5%;
+    position: relative;
+    
+
+}
+.gallery .viewportForImage #galleryCurrentImage{
+    position: absolute;
+    max-width: 100%;
+    max-height: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+

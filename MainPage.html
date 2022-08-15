@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta lang="ukr">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1 id="siteName">I don't know</h1>
+    </header>
+    <nav>
+        <ul id="navBar">
+            <li class="currentPage"><a href="MainPage.html" class="navBarElement">Головна</a></li>
+            <li>
+                <div class="dropdown" class="navBarElement">Проєкти
+                    <div class="dropdown-content">
+                        <a href="Projects/Dungeon Mystery.html">Dungeon Mystery</a>
+                        <a href="Projects/TreasureHunt.html">Treasure Hunt</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="dropdown" class="navBarElement">Блог
+                    <div class="dropdown-content">
+                        <a href="">Поки що недоступно. В планах</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <div class="clearfix">
+        <div id="mainPart">
+            <section>
+                <h2>Про нас</h2>
+                <p>Ми <strong>I don't know - </strong> це невелика команда студентів, що створють ігри.
+                    Наші проєкти можете переглянути, встановити та ознайомитись з вихідним кодом
+                    у відповідний вкладці на сайті.</p><br><br>
+                <div class="gallery clearfix">
+                    <button class="left-button" type="button"
+                        onclick="changeImage(false,'galleryCurrentImage','', 'MainPage')">&lt;</button>
+                    <div class="viewportForImage">
+                        <a id="galleryCurrentImageHREF" href="Images/TH1.png">
+                            <img src="Images/TH1.png" alt="gallery-viewport" id="galleryCurrentImage">
+                        </a>
+                    </div>
+                    <button class="right-button" type="button"
+                        onclick="changeImage(true,'galleryCurrentImage','', 'MainPage')">&gt;</button>
+                </div>
+            </section>
+            <section>
+                <h2>Блог</h2>
+                <p>На сайті планується створення блогу. Поки що він пустий, але ми плануємо добавляти туди цікаві статті, якось пов'язані 
+                    з нашими проєктами або розробкою ігор у цілому.
+                </p>
+            </section>
+        </div>
+        <aside class="clearfix">
+            <section>
+                <div>
+                    <img src="Images/MrZelphi.jpg" alt="Mr.Zelphi">
+                    Рекомендую підписатись на ютуб канал нашого друга!
+                    <button class="asideButton" type="button"
+                        onclick="location.href='https\://youtube.com/channel/UC4EjoVh4-8a7tlAgUBGhdWw'">Переглянути
+                        канал</button>
+                </div>
+            </section>
+        </aside>
+    </div>
+    <footer>
+        <p><b>I don't know - </b> Некомерційна організація розробників ігор.</p><br>
+        <p>Можете зв'язатися зі мною тут: <a href="mailto:yaroscro@gmail.com">yaroscro@gmail.com</a></p>
+    </footer>
+    <script src="code.js"></script>
+</body>
+
+
+
+</html>

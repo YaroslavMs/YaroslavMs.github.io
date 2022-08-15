@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta lang="ukr">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <header>
+        <h1 id="siteName">I don't know</h1>
+    </header>
+    <nav>
+        <ul id="navBar">
+            <li><a href="../MainPage.html" class="navBarElement">Головна</a></li>
+            <li>
+                <div class="dropdown" class="navBarElement">
+                    <span class="currentPage">Проєкти</span>
+                    <div class="dropdown-content">
+                        <a href="Dungeon Mystery.html">Dungeon Mystery</a>
+                        <a href="TreasureHunt.html" class="currentPage">Treasure Hunt</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="dropdown" class="navBarElement">Блог
+                    <div class="dropdown-content">
+                        <a href="#">Blog 1</a>
+                        <a href="#">Blog 2</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <div class="clearfix">
+        <div id="mainPart">
+            <section>
+                <h2 style="text-align: center;">Treasure Hunt</h2>
+                <div class="gallery clearfix">
+                    <button class="left-button" type="button" onclick="changeImage(false,'galleryCurrentImage','../', 'TreasureHunt')">&lt;</button>
+                    <div class="viewportForImage">
+                        <a id="galleryCurrentImageHREF" href="../Images/TH1.png">
+                        <img src="../Images/TH1.png" alt="gallery-viewport" id="galleryCurrentImage">
+                        </a>
+                    </div>
+                    <button class="right-button" type="button" onclick="changeImage(true,'galleryCurrentImage','../', 'TreasureHunt')">&gt;</button>
+                </div>
+                <br>
+                <p>Treasure Hunt - це гра в жанрі платформер розроблена для windows. Гра розроблялась з використанням рушія <a
+                        href="https://www.sfml-dev.org/">SFML</a>.</p><br>
+                <p>Досліджуйте таємничий замок у цій двовимірній грі-платформері.
+                    Замок складається з трьох великих рівнів, повних пасток і ворогів.
+                    Щоб закінчити рівень, ви повинні знайти всі три ключі, заховані на рівні,
+                    і знайти двері, що ведуть на наступний рівень.
+                    Після проходження рівня ви отримуєте зірки, кількість зірок залежить від кількості кристалів
+                    зібраних на рівні. На рівнях також є різні бонуси, які можуть посилити вашу гравітацію,
+                    швидкість і дати безсмертя на деякий період часу.
+                    Також є контрольні точки, на яких ви відроджуєтеся після втрати життів. Після втрати всіх життів
+                    незбережений прогрес рівня втрачається.
+                </p>
+                <br>
+                <video width="100%" height="auto" controls>
+                    <source src="../Images/THPreview.mp4" type="video/mp4">
+                    Your browser doesn't support video tag
+                </video>
+                <br><br>
+                <button class="downloadButton" type="button" onclick="location.href='../Files/TreasurehuntSetup.exe'">Завантажити гру</button>
+                <br>
+                <br>
+                <p><b>Посилання:</b></p><br>
+                <p><a href="https://github.com/YaroslavMs/TreasureHuntGame">GitHub</a></p><br>
+            </section>
+        </div>
+        <aside class="clearfix">
+            <section>
+                <div>
+                    <img src="../Images/MrZelphi.jpg" alt="Mr.Zelphi">
+                    Рекомендую підписатись на ютуб канал нашого друга!
+                    <button class="asideButton" type="button"
+                        onclick="location.href='https\://youtube.com/channel/UC4EjoVh4-8a7tlAgUBGhdWw'">Переглянути
+                        канал</button>
+                </div>
+            </section>
+        </aside>
+    </div>
+    <footer>
+        <p><b>I don't know - </b> Некомерційна організація розробників ігор.</p><br>
+        <p>Можете зв'язатися зі мною тут: <a href="mailto:yaroscro@gmail.com">yaroscro@gmail.com</a></p>
+    </footer>
+    <script src="../code.js"></script>
+</body>
+
+
+
+</html>
