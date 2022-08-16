@@ -6,7 +6,7 @@ const galleries =
 ];
 let currentImage = 0;
 
-function changeImage(right/*bool*/, ImageViewID/*string*/, beforeDir/*string*/, gameName) {
+function changeImage(right/*bool*/, ImageViewID/*string*/, beforeDir/*string*/, gameName /*string*/) {
     let id = 0;
     for(let i = 0; i < galleries.length; i++){
         if(galleries[i].galleryName == gameName){

@@ -71,7 +71,7 @@ div#mainPart{
 }
 div#mainPart section{
     padding: 90px 40px 90px 90px;
-    margin: 40px ;
+    margin: 40px;
     border-bottom: 1px solid black;
 }
 div#mainPart section:last-child {
@@ -230,5 +230,38 @@ aside img{
     top: 50%;
     transform: translate(-50%, -50%);
     
+}
+@media screen and (max-width: 768px){
+    aside{
+        display: none;
+
+    }
+    div#mainPart{
+        width: 100%;
+    }
+    nav{
+        font-size: 1.6em;
+        padding: 16px 0px;
+    }
+    .dropdown-content{
+        min-width: 120px;
+        font-size: 0.7em;
+    }
+    div#mainPart section{
+        padding: 60px 20px 60px 20px;
+        margin: 0;
+    }
+    .gallery{
+        height: 200px;
+    }
+    h2{
+        padding-left: 0;
+        text-align: center;
+    }
+    .gallery .left-button, .gallery .right-button{
+        padding: 4px 7px;
+
+
+    }
 }
 
