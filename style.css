@@ -241,8 +241,20 @@ aside img{
         width: 100%;
     }
     nav{
-        font-size: 1.6em;
+        font-size: 1.8em;
         padding: 16px 0px;
+        position: static;
+    }
+    #navBar > li{
+        display: block;
+        padding: 8px 0px;
+        text-align: center;
+        margin: auto;
+        padding: auto;
+    }
+    #navBar > li + li::before{
+        padding: 0px;
+        content: "";
     }
     .dropdown-content{
         min-width: 120px;
